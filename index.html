@@ -1,285 +1,1515 @@
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>정지훈🤍박미령</title>
-    <meta name="description" content="저희의 결혼식에 소중한 분들을 초대합니다."/>
-    <meta property="og:title" content="정지훈🤍박미령"/>
-    <meta property="og:description" content="저희의 결혼식에 소중한 분들을 초대합니다."/>
-    <meta property="og:url" content="https://jihub0123.github.io/weddingCard/"/>
-    <meta property="og:image" content="./images/main.jpg"/>
-    <meta property="og:image:alt" content="정지훈🤍박미령"/>
-    <meta property="og:type" content="website"/>
-    <meta name="twitter:image:alt" content="정지훈🤍박미령"/>
-    <!--    <link rel="icon" href="https://hellomybrand.com/wed/favicon.png"/>-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>정지훈🤍박미령</title>
+        <meta name="description" content="저희의 결혼식에 소중한 분들을 초대합니다."/>
+        <meta property="og:title" content="정지훈🤍박미령"/>
+        <meta property="og:description" content="저희의 결혼식에 소중한 분들을 초대합니다."/>
+        <meta property="og:url" content="https://jihub0123.github.io/weddingCard/"/>
+        <meta property="og:image" content="./images/main.jpg"/>
+        <meta property="og:image:alt" content="정지훈🤍박미령"/>
+        <meta property="og:type" content="website"/>
+        <meta name="twitter:image:alt" content="정지훈🤍박미령"/>
+        <!--    <link rel="icon" href="https://hellomybrand.com/wed/favicon.png"/>-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
+                integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
+                crossorigin="anonymous"></script>
 
-    <style>
-        @font-face {
-            font-family: 'NotoSansKR';
-            font-weight: Regular;
-            font-style: normal;
-            src: url("./font/NotoSansKR-Regular.ttf") format("truetype");
-        }
+        <style>
+            @font-face {
+                font-family: 'NotoSansKR';
+                font-weight: Regular;
+                font-style: normal;
+                src: url("./font/NotoSansKR-Regular.ttf") format("truetype");
+            }
 
-        @font-face {
-            font-family: 'NanumMyeongjo';
-            font-weight: Regular;
-            font-style: normal;
-            src: url("./font/NanumMyeongjo-Regular.ttf") format("truetype");
-        }
+            @font-face {
+                font-family: 'NanumMyeongjo';
+                font-weight: Regular;
+                font-style: normal;
+                src: url("./font/NanumMyeongjo-Regular.ttf") format("truetype");
+            }
 
-        @font-face {
-            font-family: 'Taviraj';
-            font-weight: Regular;
-            font-style: normal;
-            src: url("./font/Taviraj-ExtraLight.ttf") format("truetype");
-        }
+            @font-face {
+                font-family: 'Taviraj';
+                font-weight: Regular;
+                font-style: normal;
+                src: url("./font/Taviraj-ExtraLight.ttf") format("truetype");
+            }
 
-        @font-face {
-            font-family: 'aAutoSignature';
-            font-weight: Regular;
-            font-style: normal;
-            src: url("./font/aAutoSignature.otf") format("opentype"),
-            url("./font/aAutoSignature.ttf") format("truetype");
-        }
+            @font-face {
+                font-family: 'aAutoSignature';
+                font-weight: Regular;
+                font-style: normal;
+                src: url("./font/aAutoSignature.otf") format("opentype"),
+                url("./font/aAutoSignature.ttf") format("truetype");
+            }
 
-        html, body, * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            overflow: auto;
-            background-color: #B8D7DBFF;
-            padding: 50px 0;
-            transition: .5s;
-        }
-
-        p {
-            font-family: "Noto Sans KR";
-            text-align: center;
-        }
-
-        #frame {
-            width: 400px;
-            height: auto;
-            background-color: #E0F1F1FF;
-            margin: 0 auto;
-            border-radius: 25px;
-            transition: .5s;
-        }
-
-        @media screen and (max-width: 780px) {
-            body {
+            html, body, * {
+                margin: 0;
                 padding: 0;
             }
 
-            #frame {
-                border-radius: 0;
+            body {
+                font-family: 'NanumMyeongjo';
+                font-weight: 500;
+                font-size: 1rem;
+                letter-spacing: .1rem;
+                overflow: auto;
+                background-color: #B8D7DBFF;
+                padding: 50px 0;
+                transition: .5s;
             }
-        }
 
-        @media screen and (max-width: 400px) {
+            p {
+                text-align: center;
+            }
+
             #frame {
                 width: 100%;
+                max-width: 450px;
+                height: auto;
+                /*background-color: #E0F1F1FF;*/
+                /*background-color: #f5ffff;*/
+                background-color: #e7f9f9;
+                margin: 0 auto;
+                border-radius: 25px;
+                transition: .5s;
             }
-        }
 
-        .content {
-            padding: 4rem 1.5rem;
-        }
+            .content {
+                padding: 4rem 1.5rem;
+            }
 
-        #content1 .mainImage {
-            border-top-left-radius: 9999px;
-            border-top-right-radius: 9999px;
-            overflow: hidden;
-        }
+            #content1 .mainImage {
+                border-top-left-radius: 9999px;
+                border-top-right-radius: 9999px;
+                overflow: hidden;
+            }
 
-        #content1 .mainImage img {
-            width: 100%;
-            height: auto;
-        }
+            #content1 .mainImage img {
+                width: 100%;
+                height: auto;
+            }
 
-        #content1 .engName {
-            font-family: 'aAutoSignature';
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-            margin: 50px 0 30px;
-        }
+            #content1 .engName {
+                font-family: 'aAutoSignature';
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+                margin: 50px 0 30px;
+            }
 
-        #content1 .mainTime {
-            font-size: 1rem;
-            line-height: 2.5rem;
-        }
+            #content1 .mainTime {
+                font-size: 1rem;
+                line-height: 2.5rem;
+            }
 
-        #content2 {
-            background-color: #fff;
-        }
+            #content2 {
+                background-color: #fff;
+            }
 
-        #content2 .svgBox {
-            width: 200px;
-            height: 100px;
-            margin: 0 auto 10px;
-        }
+            #content2 .svgBox {
+                width: 200px;
+                height: 100px;
+                margin: 0 auto 10px;
+            }
 
-        #content2 .textBox {
-            line-height: 2rem;
-        }
+            #content2 .textBox {
+                line-height: 2rem;
+            }
 
-        #content2 .textBox p {
-            font-family: 'NanumMyeongjo';
-            margin-bottom: 20px;
-        }
+            #content2 .textBox p {
+                font-family: 'NanumMyeongjo';
+                margin-bottom: 20px;
+            }
 
-        #content3 {
-            background-color: #75A0B5FF;
-            height: calc(100% - 4rem);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+            #content3 {
+                background-color: #75A0B5FF;
+                height: calc(100% - 4rem);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                display: none;
+            }
 
-        #content3 .textBox {
+            #content3 .textBox {
 
-        }
+            }
 
-        #content3 .textBox p {
-            font-family: 'Taviraj';
-            color: #fff;
-            font-size: 6rem;
-            line-height: 1.35;
-        }
-    </style>
-</head>
+            #content3 .textBox p {
+                font-family: 'Taviraj';
+                color: #fff;
+                font-size: 6rem;
+                line-height: 1.35;
+            }
 
-<body>
-<div id="frame">
-    <!--첫번째 영역, 메인 사진, 영문 이름, 일자-->
-    <div id="content1" class="content">
-        <div class="mainImage">
-            <img src="./images/mainThumb.jpg">
+            #content4 {
+                background-color: #f8f8f8;
+            }
+
+            #content4 .title1 {
+                font-size: 1.4rem;
+                margin-bottom: 35px;
+            }
+
+            #content4 .title2 {
+                font-size: .9rem;
+                margin-bottom: 10px;
+            }
+
+            #content4 .subTitle {
+                font-size: .9rem;
+                color: #00000080;
+            }
+
+            #content4 .calendarBox {
+                margin: 30px 0;
+                padding: 20px;
+                border-top: 1px solid #00000030;
+                border-bottom: 1px solid #00000030;
+            }
+
+            #content4 .calendarBox .calendar {
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+            }
+
+            #content4 .calendarBox .calendar th,
+            #content4 .calendarBox .calendar td {
+                width: 50px;
+                height: 50px;
+                vertical-align: middle;
+                font-size: 1rem;
+            }
+
+            #content4 .calendarBox .calendar th {
+                font-weight: 500;
+                padding-bottom: 1.5rem;
+            }
+
+            #content4 .calendarBox .calendar .sun {
+                color: #e63946;
+            }
+
+            #content4 .calendarBox .calendar td .selected {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                background-color: #75A0B5FF;
+                color: #fff;
+                border-radius: 50%;
+                font-weight: 500;
+            }
+
+            #content4 .countdownBox {
+                text-align: center;
+            }
+
+            #content4 .countdownBox .ddayText {
+                font-size: .9rem;
+                color: #333;
+                margin-top: 30px;
+            }
+
+            #content4 .countdownBox .ddayText #ddayTitle span {
+                color: #75A0B5FF;
+            }
+
+            #content4 .countdownBox .countdownContainer {
+                display: flex;
+                gap: 20px;
+            }
+
+            #content4 .countdownBox .countdownContainer .box {
+                background-color: #ffffff;
+                padding: 20px 10px;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+                text-align: center;
+                min-width: calc(100% / 7);
+                width: 100%;
+            }
+
+            #content4 .countdownBox .countdownContainer .box .number {
+                display: block;
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #444;
+            }
+
+            #content4 .countdownBox .countdownContainer .box .label {
+                display: block;
+                font-size: 0.7rem;
+                color: #888;
+                margin-top: 5px;
+                letter-spacing: 0;
+            }
+
+            #content5 .contactContainer {
+                width: 100%;
+            }
+
+            /* 각 섹션 (신랑측, 신부측) */
+            #content5 .contactContainer .contact-section {
+                margin-bottom: 50px;
+            }
+
+            /* 섹션 제목 (아이콘 + 텍스트) */
+            #content5 .contactContainer .section-title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            #content5 .contactContainer .section-title i {
+                font-size: 1rem;
+                margin-right: 8px;
+            }
+
+            /* 신랑측 색상 */
+            #content5 .contactContainer .groom-side .section-title {
+                color: #6a994e;
+            }
+
+            /* 신부측 색상 */
+            #content5 .contactContainer .bride-side .section-title {
+                color: #bc6c25;
+            }
+
+            /* 구분선 */
+            #content5 .contactContainer hr {
+                border: 0;
+                height: 2px;
+                width: 80%;
+                margin: 0 auto 25px;
+            }
+
+            #content5 .contactContainer .groom-side hr {
+                background-color: #d8e4d2;
+            }
+
+            #content5 .contactContainer .bride-side hr {
+                background-color: #e8d8c6;
+            }
+
+            /* 연락처 한 줄 (이름 + 아이콘) */
+            #content5 .contactContainer .contact-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 5px;
+                font-size: 1rem;
+                gap: 1rem;
+            }
+
+            /* 직책 (신랑, 혼주 등) */
+            #content5 .contactContainer .contact-item .person .role {
+                color: #888;
+                margin-right: 15px;
+            }
+
+            /* 이름 */
+            #content5 .contactContainer .contact-item .person .name {
+                font-weight: 600;
+                color: #333;
+            }
+
+            /* 전화, 메시지 아이콘 */
+            #content5 .contactContainer .contact-item .actions a {
+                color: #555;
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin-left: 20px;
+                transition: color 0.2s;
+            }
+
+            #content5 .contactContainer .contact-item .actions a:hover {
+                color: #000;
+            }
+
+            #content5 #popupButton {
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #75A0B5FF;
+                color: #fff;
+                font-size: .875rem;
+                padding: 0 20px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            #content5 #popupBackground {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background-color: #00000033;
+                transition: .5s;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            #content5 #popupBackground.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            #content5 #popupContent {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                max-width: 500px;
+                max-height: 70%;
+                background-color: #f8f8f8;
+                transition: .5s;
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            #content5 #popupContent.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            #content6 {
+                background-color: #fff;
+                padding: 4rem 0;
+            }
+
+            #content6 .gallerySection .galleryContainer {
+                padding: 0 5px;
+            }
+
+            #content6 .gallerySection .galleryContainer h2 {
+                text-align: center;
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin-bottom: 50px;
+            }
+
+            #content6 .gallerySection .galleryContainer .galleryGrid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 5px;
+                transition: max-height 0.7s ease-in-out;
+            }
+
+            #content6 .gallerySection .galleryContainer .galleryGrid img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                aspect-ratio: 1;
+            }
+
+            #content6 .gallerySection .galleryContainer .galleryGrid img:hover {
+                opacity: 0.8;
+            }
+
+            #content6 .gallerySection .galleryContainer .galleryGrid img.hidden {
+                display: none;
+            }
+
+            #content6 .gallerySection .viewMoreContainer {
+                padding: 30px 0;
+                text-align: center;
+            }
+
+            #content6 .gallerySection .viewMoreContainer #viewMoreBtn {
+                background: none;
+                border: none;
+                color: #555;
+                cursor: pointer;
+                font-size: 1rem;
+            }
+
+            #content6 .gallerySection .viewMoreContainer #viewMoreBtn i {
+                display: block;
+                margin-top: 8px;
+            }
+
+            #content6 .gallerySection .viewMoreContainer #viewMoreBtn.hidden {
+                display: none;
+            }
+
+            #content6 .lightboxOverlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+                flex-direction: column;
+            }
+
+            #content6 .lightboxOverlay.show {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            #content6 .lightboxOverlay .lightboxContent {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95%;
+                max-height: 80%;
+            }
+
+            #content6 .lightboxOverlay .lightboxContent #lightboxImage {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                margin-bottom: 20px;
+                -webkit-user-drag: none;
+                -khtml-user-drag: none;
+                -moz-user-drag: none;
+                -o-user-drag: none;
+                user-drag: none;
+            }
+
+            #content6 .lightboxOverlay .closeButton {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: white;
+                cursor: pointer;
+                border: none;
+                background: none;
+                font-size: 2.5rem;
+                z-index: 1001;
+            }
+
+            #content6 .lightboxOverlay .lightboxControls {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 95%;
+                color: white;
+                font-size: 1rem;
+                padding: 10px 0;
+                gap: 2rem;
+            }
+
+            #content6 .lightboxOverlay .lightboxControls .prevButton, .nextButton {
+                background: none;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+
+            #content6 .lightboxOverlay .lightboxControls .imageCounter {
+                font-size: 1rem;
+            }
+
+            #content7 .locationSection .locationContainer {
+                text-align: center;
+            }
+
+            #content7 .locationSection .locationContainer h2 {
+                font-weight: 500;
+                color: #444;
+                letter-spacing: 2px;
+                margin-bottom: 50px;
+            }
+
+            #content7 .locationSection .locationContainer .infoText {
+                color: #333;
+                margin-bottom: 25px;
+            }
+
+            #content7 .locationSection .locationContainer .infoText .hallName {
+                font-size: 1.1rem;
+                font-weight: 500;
+                margin: 0 0 10px 0;
+            }
+
+            #content7 .locationSection .locationContainer .infoText .address {
+                font-size: 0.95rem;
+                color: #555;
+                margin: 0;
+            }
+
+            #content7 .locationSection .locationContainer .infoText .address .copyButton {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: #555;
+                font-size: 0.9rem;
+                padding: 0 5px;
+            }
+
+            #content8 {
+                background-color: #f8f8f8;
+            }
+
+            #content8 .mainContainer h2 {
+                text-align: center;
+                font-weight: 500;
+                color: #333;
+                margin-bottom: 30px;
+            }
+
+            #content8 .mainContainer .accordionContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem {
+                background-color: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                border: 1px solid #e9ecef;
+                overflow: hidden; /* 내부 콘텐츠가 넘치지 않도록 설정 */
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 18px 20px;
+                cursor: pointer;
+                font-size: 1.05rem;
+                font-weight: 500;
+                color: #495057;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionHeader i {
+                color: #868e96;
+                transition: transform 0.4s ease; /* 화살표 회전 애니메이션 */
+            }
+
+            /* --- 애니메이션을 위한 핵심 CSS --- */
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.5s ease-in-out; /* max-height를 0.5초 동안 애니메이션 */
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent {
+                padding: 25px 20px;
+                background-color: #e7f9f9;
+                border-top: 1px solid #f1f3f5;
+            }
+
+            /* JavaScript로 active 클래스가 추가되었을 때의 스타일 */
+            #content8 .mainContainer .accordionContainer .accordionItem.active .accordionContentWrapper {
+                max-height: 50rem; /* 내용이 충분히 들어갈 큰 값으로 설정 */
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem.active .accordionHeader i {
+                transform: rotate(-180deg);
+            }
+
+            /* --- 나머지 카드 및 버튼 스타일 (이전과 동일) --- */
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard {
+                background-color: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 15px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard:last-child {
+                margin-bottom: 0;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard .info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size: 0.8rem;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard .info .name {
+                font-weight: 700;
+                color: #212529;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard .info .bank {
+                color: #495057;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard .copyBtn {
+                width: 100%;
+                padding: 12px;
+                background-color: #495057;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 0.9rem;
+                font-weight: 500;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: background-color 0.2s;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard .copyBtn:hover {
+                background-color: #343a40;
+            }
+
+            #content8 .mainContainer .accordionContainer .accordionItem .accordionContentWrapper .accordionContent .accountCard .copyBtn i {
+                font-size: 1.1rem;
+            }
+
+            #content9 {
+                background-color: #fff;
+            }
+
+            #content9 .shareContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 12px; /* 버튼 사이 간격 */
+            }
+
+            /* 버튼 공통 스타일 */
+            #content9 .shareContainer .actionButton {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 16px 20px;
+                border-radius: 15px;
+                border: none;
+                font-size: 1rem;
+                font-weight: 500;
+                cursor: pointer;
+                text-decoration: none; /* a 태그의 밑줄 제거 */
+                box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            #content9 .shareContainer .actionButton:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            }
+
+            #content9 .shareContainer .actionButton i {
+                font-size: 1.1rem;
+            }
+
+            /* 카카오톡 공유 버튼 스타일 */
+            #content9 .shareContainer .kakaoShareButton {
+                background-color: #F7D65A; /* 이미지의 노란색 */
+                color: #3C1E1E;
+            }
+
+            /* 주소 복사 버튼 스타일 */
+            #content9 .shareContainer .linkCopyButton {
+                background-color: #75A0B5FF; /* 이미지의 녹색 */
+                color: #fff;
+            }
+
+
+            #content10 {
+                background-color: #fff;
+                text-align: center;
+                padding-top: 0;
+            }
+
+            #content10 p {
+                text-align: center;
+            }
+
+            @media screen and (max-width: 780px) {
+                body {
+                    padding: 0;
+                }
+
+                #frame {
+                    border-radius: 0;
+                }
+
+                #content6 .lightboxOverlay .lightboxContent {
+                    max-height: 70%;
+                }
+
+                #content6 .lightboxOverlay .lightboxContent #lightboxImage {
+                    margin-bottom: 15px;
+                }
+
+                #content6 .lightboxOverlay .lightboxControls {
+                    font-size: 0.9rem;
+                }
+
+                #content6 .lightboxOverlay .lightboxControls .prevButton, .nextButton {
+                    font-size: 1.3rem;
+                    padding: 8px;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+                #frame {
+                    width: 100%;
+                }
+            }
+        </style>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                const dDayTitle   = "지훈 & 미령 결혼식";
+                const dDayDate    = "2025-08-30T14:10:00";
+                const titleNode   = document.getElementById("ddayTitle");
+                const daysNode    = document.getElementById("days");
+                const hoursNode   = document.getElementById("hours");
+                const minutesNode = document.getElementById("minutes");
+                const secondsNode = document.getElementById("seconds");
+
+                function updateCountdown() {
+                    const targetDate = new Date(dDayDate).getTime();
+                    const now        = new Date().getTime();
+                    const distance   = targetDate - now;
+
+                    const days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    if (distance < 0) {
+                        clearInterval(interval);
+                        daysNode.textContent    = "00";
+                        hoursNode.textContent   = "00";
+                        minutesNode.textContent = "00";
+                        secondsNode.textContent = "00";
+                        titleNode.textContent   = `${dDayTitle} D-DAY`;
+                        return;
+                    } else {
+                        titleNode.innerHTML = `${dDayTitle}이 <span>${days}일</span> 남았습니다.`;
+                    }
+
+                    daysNode.textContent    = String(days).padStart(2, '0');
+                    hoursNode.textContent   = String(hours).padStart(2, '0');
+                    minutesNode.textContent = String(minutes).padStart(2, '0');
+                    secondsNode.textContent = String(seconds).padStart(2, '0');
+                }
+
+                const interval = setInterval(updateCountdown, 1000);
+
+                updateCountdown();
+
+                // let popupState        = true;
+                // const popupBackground = document.getElementById('popupBackground');
+                // const popupContent    = document.getElementById('popupContent');
+                //
+                // document.getElementById('popupButton').addEventListener('click', () => {
+                //     if (popupState) {
+                //         popupState = false;
+                //
+                //         popupBackground.classList.add('active');
+                //         popupContent.classList.add('active');
+                //
+                //         requestAnimationFrame(() => {
+                //             popupState = true;
+                //         })
+                //     }
+                // });
+                //
+                // popupBackground.addEventListener('click', closePopup);
+
+                function closePopup() {
+                    popupBackground.classList.remove('active');
+                    popupContent.classList.remove('active');
+                }
+
+                const viewMoreBtn = document.getElementById('viewMoreBtn');
+
+                const galleryImages       = document.querySelectorAll('.galleryGrid img');
+                const lightbox            = document.getElementById('lightbox');
+                const lightboxImage       = document.getElementById('lightboxImage');
+                const closeBtn            = document.querySelector('.closeButton');
+                const prevBtn             = document.querySelector('.prevButton');
+                const nextBtn             = document.querySelector('.nextButton');
+                const currentImageCounter = document.getElementById('currentImage');
+                const totalImagesCounter  = document.getElementById('totalImages');
+
+                let currentIndex  = 0;
+                const imagesArray = Array.from(galleryImages);
+
+                function showLightbox(index) {
+                    currentIndex = index;
+                    updateLightboxContent();
+                    lightbox.classList.add('show');
+                }
+
+                function hideLightbox() {
+                    lightbox.classList.remove('show');
+                }
+
+                function updateLightboxContent() {
+                    lightboxImage.src               = imagesArray[currentIndex].src.replace('/thumb', '');
+                    currentImageCounter.textContent = currentIndex + 1;
+                    totalImagesCounter.textContent  = imagesArray.length;
+                }
+
+                function showPrevImage() {
+                    currentIndex = (currentIndex - 1 + imagesArray.length) % imagesArray.length;
+                    updateLightboxContent();
+                }
+
+                function showNextImage() {
+                    currentIndex = (currentIndex + 1) % imagesArray.length;
+                    updateLightboxContent();
+                }
+
+                function handleSwipe() {
+                    const swipeThreshold = 50;
+                    if (touchendX < touchstartX - swipeThreshold) {
+                        showNextImage();
+                    } else if (touchendX > touchstartX + swipeThreshold) {
+                        showPrevImage();
+                    }
+                }
+
+                if (viewMoreBtn) {
+                    viewMoreBtn.addEventListener('click', () => {
+                        const hiddenImages = document.querySelectorAll('.galleryGrid .hidden');
+                        hiddenImages.forEach(img => {
+                            img.style.display = 'block';
+                            img.classList.remove('hidden');
+                        });
+                        viewMoreBtn.classList.add('hidden');
+                    });
+                }
+
+                imagesArray.forEach((img, index) => {
+                    img.addEventListener('click', () => showLightbox(index));
+                });
+
+                closeBtn.addEventListener('click', hideLightbox);
+                prevBtn.addEventListener('click', showPrevImage);
+                nextBtn.addEventListener('click', showNextImage);
+
+                let touchstartX = 0;
+                let touchendX   = 0;
+                lightbox.addEventListener('touchstart', e => {
+                    touchstartX = e.changedTouches[0].screenX;
+                }, {passive: true});
+
+                lightbox.addEventListener('touchend', e => {
+                    touchendX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                });
+
+                document.addEventListener('keydown', e => {
+                    if (!lightbox.classList.contains('show')) return;
+
+                    if (e.key === 'ArrowLeft') showPrevImage();
+                    if (e.key === 'ArrowRight') showNextImage();
+                    if (e.key === 'Escape') hideLightbox();
+                });
+
+                const accordionHeaders = document.querySelectorAll('.accordionHeader');
+
+                accordionHeaders.forEach(header => {
+                    header.addEventListener('click', () => {
+                        const accordionItem = header.parentElement;
+
+                        accordionItem.classList.toggle('active');
+                    });
+                });
+
+                const copyButtons = document.querySelectorAll('.copyBtn');
+
+                copyButtons.forEach(button => {
+                    button.addEventListener('click', (event) => {
+                        event.stopPropagation();
+
+                        const accountNumber = button.dataset.account;
+
+                        navigator.clipboard.writeText(accountNumber).then(() => {
+                            alert(`계좌번호(${accountNumber})가 복사되었습니다.`);
+                        }).catch(err => {
+                            console.error('복사 실패:', err);
+                            alert('계좌번호 복사에 실패했습니다.');
+                        });
+                    });
+                });
+            });
+
+            function copyAddress() {
+                const addressText = document.getElementById('addressText').textContent.trim();
+                navigator.clipboard.writeText(addressText).then(() => {
+                    alert("주소가 복사되었습니다.");
+                }).catch(err => {
+                    console.error('주소 복사에 실패했습니다.', err);
+                    alert("주소 복사에 실패했습니다.");
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="frame">
+            <!--첫번째 영역, 메인 사진, 영문 이름, 일자-->
+            <div id="content1" class="content">
+                <div class="mainImage">
+                    <img src="./images/mainThumb.jpg">
+                </div>
+
+                <p class="engName">
+                    Jihun & Miryeong
+                </p>
+
+                <p class="mainTime">
+                    2025. 08. 30 Saturday 14:10
+                    <br>
+                    DMC웨딩타워 그랜드볼륨홀 2층
+                </p>
+            </div>
+
+            <!--인사말, 상단 리본 애니메이션-->
+            <div id="content2" class="content">
+                <div class="svgBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 52"
+                         width="160" height="52" preserveAspectRatio="xMidYMid meet"
+                         style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
+                        <defs>
+                            <clipPath id="__lottie_element_191">
+                                <rect width="160" height="52" x="0" y="0"></rect>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#__lottie_element_191)">
+                            <g transform="matrix(-1.3799999952316284,0,0,1.3799999952316284,77.25472259521484,25.537220001220703)"
+                               opacity="1" style="display: block;">
+                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#B8D7DBFF"
+                                      stroke-opacity="1" stroke-width="2"
+                                      d=" M-1.7410000562667847,-6.458000183105469 C-1.7410000562667847,-6.458000183105469 8.251999855041504,-14.954000473022461 16.194000244140625,-9.310999870300293 C18.09600067138672,-7.960000038146973 17.510000228881836,-6.383999824523926 17.198999404907227,-5.51200008392334 C16.382999420166016,-3.2269999980926514 12.392000198364258,-2.7109999656677246 8.720999717712402,-4.283999919891357 C3.8940000534057617,-6.353000164031982 -0.2460000067949295,-6.547999858856201 -1.6050000190734863,-6.185999870300293 C-2.9639999866485596,-5.823999881744385 -6.99399995803833,-5.098999977111816 -9.982999801635742,-2.2909998893737793 C-12.972000122070312,0.5170000195503235 -20.98900032043457,3.5969998836517334 -26.785999298095703,1.6039999723434448"></path>
+                            </g>
+                            <g transform="matrix(1.3799999952316284,0,0,1.3799999952316284,82.62027740478516,25.537220001220703)"
+                               opacity="1" style="display: block;">
+                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#B8D7DBFF"
+                                      stroke-opacity="1" stroke-width="2"
+                                      d=" M-1.7410000562667847,-6.458000183105469 C-1.7410000562667847,-6.458000183105469 8.251999855041504,-14.954000473022461 16.194000244140625,-9.310999870300293 C18.09600067138672,-7.960000038146973 17.510000228881836,-6.383999824523926 17.198999404907227,-5.51200008392334 C16.382999420166016,-3.2269999980926514 12.392000198364258,-2.7109999656677246 8.720999717712402,-4.283999919891357 C3.8940000534057617,-6.353000164031982 -0.2460000067949295,-6.547999858856201 -1.6050000190734863,-6.185999870300293 C-2.9639999866485596,-5.823999881744385 -6.99399995803833,-5.098999977111816 -9.982999801635742,-2.2909998893737793 C-12.972000122070312,0.5170000195503235 -20.98900032043457,3.5969998836517334 -26.785999298095703,1.6039999723434448"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="textBox">
+                    <p>
+                        함께하던 작은 일상이
+                        <br>
+                        이제 일생이 되는 날,
+                    </p>
+                    <p>
+                        서로 같은 곳을 바라보며
+                        <br>
+                        정성과 믿음으로 한 걸음 내딛고자 합니다.
+                    </p>
+                    <p>
+                        저희 두 사람의 새로운 시작을
+                        <br>
+                        따뜻한 축복으로
+                        <br>
+                        빛내주시면 감사하겠습니다.
+                    </p>
+                    <p>
+                        신랑 정지훈 · 신부 박미령
+                    </p>
+                </div>
+            </div>
+
+            <!--신랑, 신부 이름, 부모님 이름-->
+            <div id="content5" class="content">
+                <div class="contactContainer">
+                    <div class="contact-section groom-side">
+                        <div class="section-title">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>신랑측</span>
+                        </div>
+                        <hr>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="person">
+                                    <span class="role">신랑</span>
+                                    <span class="name">정지훈</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="tel:010-8306-9528">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="sms:010-8306-9528">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="person">
+                                    <span class="role">혼주</span>
+                                    <span class="name">정용욱</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="tel:010-8274-2587">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="sms:010-8274-2587">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="person">
+                                    <span class="role">혼주</span>
+                                    <span class="name">송희선</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="tel:010-8276-2586">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="sms:010-8276-2586">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-section bride-side">
+                        <div class="section-title">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>신부측</span>
+                        </div>
+                        <hr>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <div class="person">
+                                    <span class="role">신부</span>
+                                    <span class="name">박미령</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="tel:010-2741-2377">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="sms:010-2741-2377">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="person">
+                                    <span class="role">혼주</span>
+                                    <span class="name">박환석</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="tel:010-3694-8377">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="sms:010-3694-8377">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="person">
+                                    <span class="role">혼주</span>
+                                    <span class="name">김진아</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="tel:010-8415-2377">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </a>
+                                    <a href="sms:010-8415-2377">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div id="popupButton">-->
+<!--                    <span>축하 연락하기</span>-->
+
+<!--                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.80871 11.75C2.39449 11.75 2.05871 12.0858 2.05871 12.5C2.05871 12.9142 2.39449 13.25 2.80871 13.25L19.3816 13.25L12.1773 20.4543C11.8844 20.7472 11.8844 21.2221 12.1773 21.515C12.4702 21.8079 12.945 21.8079 13.2379 21.515L21.7232 13.0297C22.0161 12.7368 22.0161 12.262 21.7232 11.9691L13.2379 3.48378C12.945 3.19089 12.4702 3.19089 12.1773 3.48378C11.8844 3.77667 11.8844 4.25155 12.1773 4.54444L19.3828 11.75L2.80871 11.75Z" fill="white"></path>-->
+<!--                    </svg>-->
+<!--                </div>-->
+
+<!--                <div id="popupBackground"></div>-->
+<!--                <div id="popupContent">-->
+
+<!--                </div>-->
+            </div>
+
+            <!--스크롤시 큰 글씨 영어-->
+            <div id="content3" class="content">
+                <div class="textBox">
+                    <p>AUG 30</p>
+                    <p>2025</p>
+                </div>
+            </div>
+
+            <!--달력, 자세한 날짜 결혼 까지 남은시간 카운팅-->
+            <div id="content4" class="content">
+                <div>
+                    <p class="title1">WEDDING DAY</p>
+                    <p class="title2">2025년 8월 30일 토요일 | 오후 2시 10분</p>
+                    <p class="subTitle">Saturday, August 30, 2025 | PM 2:10</p>
+                </div>
+
+                <div class="calendarBox">
+                    <table class="calendar">
+                        <thead>
+                            <tr>
+                                <th class="sun">일</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td class="sun">24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>
+                                    <span class="selected">30</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="sun">31</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="countdownBox">
+                    <div class="countdownContainer">
+                        <div class="box">
+                            <span id="days" class="number">00</span>
+                            <span class="label">DAYS</span>
+                        </div>
+                        <div class="box">
+                            <span id="hours" class="number">00</span>
+                            <span class="label">HOURS</span>
+                        </div>
+                        <div class="box">
+                            <span id="minutes" class="number">00</span>
+                            <span class="label">MINUTES</span>
+                        </div>
+                        <div class="box">
+                            <span id="seconds" class="number">00</span>
+                            <span class="label">SECONDS</span>
+                        </div>
+                    </div>
+
+                    <div class="ddayText">
+                        <span id="ddayTitle"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--사진 영역 액자식 배열 클릭시 전체화면 전체화면에서 슬라이드 가능-->
+            <div id="content6" class="content">
+                <div class="gallerySection">
+                    <div class="galleryContainer">
+                        <h2>GALLERY</h2>
+                        <div class="galleryGrid">
+                            <img loading="lazy" src="./images/thumb/1.jpg">
+                            <img loading="lazy" src="./images/thumb/2.jpg">
+                            <img loading="lazy" src="./images/thumb/3.jpg">
+                            <img loading="lazy" src="./images/thumb/4.jpg">
+                            <img loading="lazy" src="./images/thumb/5.jpg">
+                            <img loading="lazy" src="./images/thumb/6.jpg">
+                            <img loading="lazy" src="./images/thumb/7.jpg">
+                            <img loading="lazy" src="./images/thumb/8.jpg">
+                            <img loading="lazy" src="./images/thumb/9.jpg">
+                            <img loading="lazy" src="./images/thumb/10.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/11.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/12.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/13.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/14.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/15.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/16.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/17.jpg" class="hidden">
+                            <img loading="lazy" src="./images/thumb/18.jpg" class="hidden">
+                        </div>
+                    </div>
+                    <div class="viewMoreContainer">
+                        <button id="viewMoreBtn">
+                            더 보기
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="lightbox" class="lightboxOverlay">
+                    <span class="closeButton">&times;</span>
+                    <div class="lightboxContent">
+                        <img id="lightboxImage" src="" alt="확대 이미지">
+                    </div>
+                    <div class="lightboxControls">
+                        <button class="prevButton">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <span class="imageCounter">
+                            <span id="currentImage"></span>
+                            /
+                            <span id="totalImages"></span>
+                        </span>
+                        <button class="nextButton">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--위치, 주소 카카오맵, 네이버, 구글-->
+            <div id="content7" class="content">
+                <div class="locationSection">
+                    <div class="locationContainer">
+                        <h2>LOCATION</h2>
+
+                        <div class="infoText">
+                            <p class="hallName">DMC타워웨딩 2층</p>
+                            <p class="address" id="addressText">
+                                서울 마포구 성암로 189
+                                <button class="copyButton" onclick="copyAddress()">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </p>
+                        </div>
+
+                        <div id="daumRoughmapContainer1750869946220" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp": "1750869946220",
+                                "key"      : "475vuex3jhh",
+                                "mapWidth" : "360",
+                                "mapHeight": "240"
+                            }).render();
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content8" class="content">
+                <div class="mainContainer">
+                    <h2>마음 전하실 곳</h2>
+
+                    <div class="accordionContainer">
+                        <div class="accordionItem">
+                            <div class="accordionHeader">
+                                <span>신랑측에게</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="accordionContentWrapper">
+                                <div class="accordionContent">
+                                    <div class="accountCard">
+                                        <div class="info">
+                                            <span class="name">정용욱</span>
+                                            <span class="bank">기업 01082742587</span>
+                                        </div>
+                                        <button class="copyBtn" data-account="01082742587">
+                                            계좌번호 복사하기
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="accountCard">
+                                        <div class="info">
+                                            <span class="name">송희선</span>
+                                            <span class="bank">기업 01082762586</span>
+                                        </div>
+                                        <button class="copyBtn" data-account="01082762586">
+                                            계좌번호 복사하기
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="accountCard">
+                                        <div class="info">
+                                            <span class="name">정지훈</span>
+                                            <span class="bank">카카오뱅크 3333046796075</span>
+                                        </div>
+                                        <button class="copyBtn" data-account="3333046796075">
+                                            계좌번호 복사하기
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordionItem">
+                            <div class="accordionHeader">
+                                <span>신부측에게</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="accordionContentWrapper">
+                                <div class="accordionContent">
+                                    <div class="accountCard">
+                                        <div class="info">
+                                            <span class="name">박환석</span>
+                                            <span class="bank">신한 110063603863</span>
+                                        </div>
+                                        <button class="copyBtn" data-account="110063603863">
+                                            계좌번호 복사하기
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="accountCard">
+                                        <div class="info">
+                                            <span class="name">김진아</span>
+                                            <span class="bank">국민 52230201018353</span>
+                                        </div>
+                                        <button class="copyBtn" data-account="52230201018353">
+                                            계좌번호 복사하기
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="accountCard">
+                                        <div class="info">
+                                            <span class="name">박미령</span>
+                                            <span class="bank">하나 34291047675407</span>
+                                        </div>
+                                        <button class="copyBtn" data-account="34291047675407">
+                                            계좌번호 복사하기
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--주소 공유-->
+            <div id="content9" class="content">
+                <div class="shareContainer">
+                    <a href="javascript:shareToKakao()" class="actionButton kakaoShareButton">
+                        <span>카카오톡으로 청첩장 전하기</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a onclick="copyUrl()" class="actionButton linkCopyButton">
+                        <span>청첩장 주소 복사하기</span>
+                        <i class="fa-regular fa-copy"></i>
+                    </a>
+                </div>
+
+                <script>
+                    Kakao.init('e47ebc4836d68bf578de464bba5892e3');
+
+                    function shareToKakao() {
+                        Kakao.Share.sendDefault({
+                            objectType: 'feed', // 피드 타입
+                            content   : {
+                                title      : '정지훈🤍박미령',
+                                description: '저희의 결혼식에 소중한 분들을 초대합니다.',
+                                imageUrl   : 'https://jihub0123.github.io/weddingCard/images/main.jpg', // 청첩장 대표 이미지 주소
+                                link       : {
+                                    mobileWebUrl: window.location.href, // 모바일 웹 URL
+                                    webUrl      : window.location.href, // PC 웹 URL
+                                },
+                            },
+                            buttons   : [
+                                {
+                                    title: '청첩장 보러가기',
+                                    link : {
+                                        mobileWebUrl: window.location.href,
+                                        webUrl      : window.location.href,
+                                    },
+                                },
+                            ],
+                        });
+                    }
+
+                    function copyUrl() {
+                        const url = window.location.href; // 현재 페이지 주소
+
+                        navigator.clipboard.writeText(url).then(() => {
+                            alert("청첩장 주소가 복사되었습니다.");
+                        }).catch(err => {
+                            alert("주소 복사에 실패했습니다.");
+                        });
+                    }
+                </script>
+            </div>
+
+            <!--카피라이트-->
+            <div id="content10" class="content">
+                ⓒ jihun & miryeong
+            </div>
         </div>
-
-        <p class="engName">
-            Jihun & Miryeong
-        </p>
-
-        <p class="mainTime">
-            2025. 08. 30 Saturday 14:10
-            <br>
-            DMC웨딩타워 그랜드볼륨홀 2층
-        </p>
-    </div>
-
-    <!--인사말, 상단 리본 애니메이션-->
-    <div id="content2" class="content">
-        <div class="svgBox">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 52"
-                 width="160" height="52" preserveAspectRatio="xMidYMid meet"
-                 style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
-                <defs>
-                    <clipPath id="__lottie_element_191">
-                        <rect width="160" height="52" x="0" y="0"></rect>
-                    </clipPath>
-                </defs>
-                <g clip-path="url(#__lottie_element_191)">
-                    <g transform="matrix(-1.3799999952316284,0,0,1.3799999952316284,77.25472259521484,25.537220001220703)"
-                       opacity="1" style="display: block;">
-                        <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#B8D7DBFF"
-                              stroke-opacity="1" stroke-width="2"
-                              d=" M-1.7410000562667847,-6.458000183105469 C-1.7410000562667847,-6.458000183105469 8.251999855041504,-14.954000473022461 16.194000244140625,-9.310999870300293 C18.09600067138672,-7.960000038146973 17.510000228881836,-6.383999824523926 17.198999404907227,-5.51200008392334 C16.382999420166016,-3.2269999980926514 12.392000198364258,-2.7109999656677246 8.720999717712402,-4.283999919891357 C3.8940000534057617,-6.353000164031982 -0.2460000067949295,-6.547999858856201 -1.6050000190734863,-6.185999870300293 C-2.9639999866485596,-5.823999881744385 -6.99399995803833,-5.098999977111816 -9.982999801635742,-2.2909998893737793 C-12.972000122070312,0.5170000195503235 -20.98900032043457,3.5969998836517334 -26.785999298095703,1.6039999723434448"></path>
-                    </g>
-                    <g transform="matrix(1.3799999952316284,0,0,1.3799999952316284,82.62027740478516,25.537220001220703)"
-                       opacity="1" style="display: block;">
-                        <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#B8D7DBFF"
-                              stroke-opacity="1" stroke-width="2"
-                              d=" M-1.7410000562667847,-6.458000183105469 C-1.7410000562667847,-6.458000183105469 8.251999855041504,-14.954000473022461 16.194000244140625,-9.310999870300293 C18.09600067138672,-7.960000038146973 17.510000228881836,-6.383999824523926 17.198999404907227,-5.51200008392334 C16.382999420166016,-3.2269999980926514 12.392000198364258,-2.7109999656677246 8.720999717712402,-4.283999919891357 C3.8940000534057617,-6.353000164031982 -0.2460000067949295,-6.547999858856201 -1.6050000190734863,-6.185999870300293 C-2.9639999866485596,-5.823999881744385 -6.99399995803833,-5.098999977111816 -9.982999801635742,-2.2909998893737793 C-12.972000122070312,0.5170000195503235 -20.98900032043457,3.5969998836517334 -26.785999298095703,1.6039999723434448"></path>
-                    </g>
-                </g>
-            </svg>
-        </div>
-
-        <div class="textBox">
-            <p>
-                함께하던 작은 일상이
-                <br>
-                이제 일생이 되는 날,
-            </p>
-            <p>
-                서로 같은 곳을 바라보며
-                <br>
-                정성과 믿음으로 한 걸음 내딛고자 합니다.
-            </p>
-            <p>
-                저희 두 사람의 새로운 시작을
-                <br>
-                따뜻한 축복으로
-                <br>
-                빛내주시면 감사하겠습니다.
-            </p>
-            <p>
-                신랑 정지훈 · 신부 박미령
-            </p>
-        </div>
-    </div>
-
-    <!--스크롤시 큰 글씨 영어-->
-    <div id="content3" class="content">
-        <div class="textBox">
-            <p>AUG 30</p>
-            <p>2025</p>
-        </div>
-    </div>
-
-    <!--달력, 자세한 날짜 결혼 까지 남은시간 카운팅-->
-    <div id="content4" class="content">
-        <div>
-            <p>WEDDING DAY</p>
-
-            <p>2025년 8월 30일 토요일 | 오후 2시 10분</p>
-            <p>Saturday, August 30, 2025 | PM 2:10</p>
-        </div>
-
-        <div>
-
-        </div>
-
-        <div></div>
-    </div>
-
-    <!--신랑, 신부 이름, 부모님 이름-->
-    <div>
-
-        <!--하단 축하연락하기 팝업-->
-        <div>
-            <!--신랑 측, 신부측-->
-        </div>
-    </div>
-
-    <!--사진 영역 액자식 배열 클릭시 전체화면 전체화면에서 슬라이드 가능-->
-    <div>
-
-    </div>
-
-    <!--위치, 주소 카카오맵, 네이버, 구글-->
-    <div>
-
-    </div>
-
-    <!--마음 전하실 곳 신랑측, 신부측, 드롭다운 계좌번호 복사 기능, -->
-    <div>
-
-    </div>
-
-    <!--주소 공유-->
-    <div>
-
-    </div>
-
-    <!--카피라이트-->
-    <div></div>
-</div>
-</body>
+    </body>
 </html>
