@@ -58,7 +58,7 @@
                 font-size: 1rem;
                 letter-spacing: .1rem;
                 overflow: auto;
-                background-color: #B8D7DBFF;
+                background-color: #f1f0cb;
                 padding: 50px 0;
                 transition: .5s;
             }
@@ -71,9 +71,7 @@
                 width: 100%;
                 max-width: 450px;
                 height: auto;
-                /*background-color: #E0F1F1FF;*/
-                /*background-color: #f5ffff;*/
-                background-color: #ddf3f9;
+                background-color: #fff;
                 margin: 0 auto;
                 border-radius: 25px;
                 transition: .5s;
@@ -81,6 +79,16 @@
 
             .content {
                 padding: 4rem 1.5rem;
+            }
+
+            #content1 {
+                position: relative;
+            }
+
+            #content1 #canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
             }
 
             #content1 .mainImage {
@@ -107,7 +115,7 @@
             }
 
             #content2 {
-                background-color: #fff;
+                background-color: #fffee6;
             }
 
             #content2 .svgBox {
@@ -126,7 +134,7 @@
             }
 
             #content3 {
-                background-color: #75A0B5FF;
+                background-color: #a9bb55;
                 height: calc(100% - 4rem);
                 display: flex;
                 align-items: center;
@@ -200,7 +208,7 @@
                 align-items: center;
                 width: 35px;
                 height: 35px;
-                background-color: #75A0B5FF;
+                background-color: #a9bb55;
                 color: #fff;
                 border-radius: 50%;
                 font-weight: 500;
@@ -217,7 +225,7 @@
             }
 
             #content4 .countdownBox .ddayText #ddayTitle span {
-                color: #75A0B5FF;
+                color: #a9bb55;
             }
 
             #content4 .countdownBox .countdownContainer {
@@ -276,12 +284,12 @@
 
             /* 신랑측 색상 */
             #content5 .contactContainer .groom-side .section-title {
-                color: #6a994e;
+                color: #a9bb55;
             }
 
             /* 신부측 색상 */
             #content5 .contactContainer .bride-side .section-title {
-                color: #bc6c25;
+                color: #FFB6C1;
             }
 
             /* 구분선 */
@@ -340,7 +348,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                background-color: #75A0B5FF;
+                background-color: #a9bb55;
                 color: #fff;
                 font-size: .875rem;
                 padding: 0 20px;
@@ -734,7 +742,7 @@
 
             /* 주소 복사 버튼 스타일 */
             #content9 .shareContainer .linkCopyButton {
-                background-color: #75A0B5FF; /* 이미지의 녹색 */
+                background-color: #a9bb55; /* 이미지의 녹색 */
                 color: #fff;
             }
 
@@ -785,6 +793,78 @@
 
         <script>
             window.addEventListener('DOMContentLoaded', () => {
+                const canvas   = document.getElementById('canvas');
+                const ctx      = canvas.getContext('2d');
+                const content1 = document.getElementById('content1');
+
+                let width, height;
+
+                function resize() {
+                    width  = content1.offsetWidth;
+                    height = content1.offsetHeight;
+                    // width        = window.innerWidth;
+                    // height        = window.innerHeight;
+                    canvas.width  = width;
+                    canvas.height = height;
+                }
+
+                window.addEventListener('resize', resize);
+                resize();
+
+                const petals     = [];
+                const petalCount = 20;
+
+                for (let i = 0; i < petalCount; i++) {
+                    petals.push({
+                        x         : Math.random() * width,
+                        y         : Math.random() * height,
+                        radius    : Math.random() * 8 + 5,
+                        speedX    : Math.random() - 0.5,
+                        speedY    : Math.random() + 0.5,
+                        angle     : Math.random() * 360,
+                        angleSpeed: Math.random() * 2 - 1
+                    });
+                }
+
+                function drawPetal(p) {
+                    ctx.save();
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate(p.angle * Math.PI / 180);
+
+                    // 꽃잎 모양 그리기
+                    ctx.beginPath();
+                    ctx.moveTo(0, 0);
+                    ctx.quadraticCurveTo(p.radius, -p.radius, 0, -p.radius * 2);
+                    ctx.quadraticCurveTo(-p.radius, -p.radius, 0, 0);
+                    ctx.fillStyle = 'rgba(249,200,0,0.65)';
+                    // ctx.fillStyle = 'rgba(255,255,255,.65)';
+                    ctx.fill();
+                    ctx.restore();
+                }
+
+                function animate() {
+                    ctx.clearRect(0, 0, width, height);
+
+                    for (let p of petals) {
+                        p.x += p.speedX;
+                        p.y += p.speedY;
+                        p.angle += p.angleSpeed;
+
+                        if (p.y > height) {
+                            p.y = -20;
+                            p.x = Math.random() * width;
+                        }
+                        if (p.x > width) p.x = 0;
+                        if (p.x < 0) p.x = width;
+
+                        drawPetal(p);
+                    }
+
+                    requestAnimationFrame(animate);
+                }
+
+                animate();
+
                 const dDayTitle   = "지훈 & 미령 결혼식";
                 const dDayDate    = "2025-08-30T14:10:00";
                 const titleNode   = document.getElementById("ddayTitle");
@@ -844,10 +924,10 @@
                 //
                 // popupBackground.addEventListener('click', closePopup);
 
-                function closePopup() {
-                    popupBackground.classList.remove('active');
-                    popupContent.classList.remove('active');
-                }
+                // function closePopup() {
+                //     popupBackground.classList.remove('active');
+                //     popupContent.classList.remove('active');
+                // }
 
                 const viewMoreBtn = document.getElementById('viewMoreBtn');
 
@@ -992,6 +1072,8 @@
                     <br>
                     DMC 타워웨딩 그랜드볼룸홀 2층
                 </p>
+
+                <canvas id="canvas"></canvas>
             </div>
 
             <!--인사말, 상단 리본 애니메이션-->
@@ -1008,13 +1090,13 @@
                         <g clip-path="url(#__lottie_element_191)">
                             <g transform="matrix(-1.3799999952316284,0,0,1.3799999952316284,77.25472259521484,25.537220001220703)"
                                opacity="1" style="display: block;">
-                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#B8D7DBFF"
+                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#a9bb55"
                                       stroke-opacity="1" stroke-width="2"
                                       d=" M-1.7410000562667847,-6.458000183105469 C-1.7410000562667847,-6.458000183105469 8.251999855041504,-14.954000473022461 16.194000244140625,-9.310999870300293 C18.09600067138672,-7.960000038146973 17.510000228881836,-6.383999824523926 17.198999404907227,-5.51200008392334 C16.382999420166016,-3.2269999980926514 12.392000198364258,-2.7109999656677246 8.720999717712402,-4.283999919891357 C3.8940000534057617,-6.353000164031982 -0.2460000067949295,-6.547999858856201 -1.6050000190734863,-6.185999870300293 C-2.9639999866485596,-5.823999881744385 -6.99399995803833,-5.098999977111816 -9.982999801635742,-2.2909998893737793 C-12.972000122070312,0.5170000195503235 -20.98900032043457,3.5969998836517334 -26.785999298095703,1.6039999723434448"></path>
                             </g>
                             <g transform="matrix(1.3799999952316284,0,0,1.3799999952316284,82.62027740478516,25.537220001220703)"
                                opacity="1" style="display: block;">
-                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#B8D7DBFF"
+                                <path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke="#a9bb55"
                                       stroke-opacity="1" stroke-width="2"
                                       d=" M-1.7410000562667847,-6.458000183105469 C-1.7410000562667847,-6.458000183105469 8.251999855041504,-14.954000473022461 16.194000244140625,-9.310999870300293 C18.09600067138672,-7.960000038146973 17.510000228881836,-6.383999824523926 17.198999404907227,-5.51200008392334 C16.382999420166016,-3.2269999980926514 12.392000198364258,-2.7109999656677246 8.720999717712402,-4.283999919891357 C3.8940000534057617,-6.353000164031982 -0.2460000067949295,-6.547999858856201 -1.6050000190734863,-6.185999870300293 C-2.9639999866485596,-5.823999881744385 -6.99399995803833,-5.098999977111816 -9.982999801635742,-2.2909998893737793 C-12.972000122070312,0.5170000195503235 -20.98900032043457,3.5969998836517334 -26.785999298095703,1.6039999723434448"></path>
                             </g>
